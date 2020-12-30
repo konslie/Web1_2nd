@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        font-size:20px;
+      }
+      h3 {
+        color: blue;
+      }
+      p {
+        color:green;
+      }
+      span {
+        font-weight:bold;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="click" onclick="alert('clicked!')"style="font-size:50px;">
+    <input type="text" onchange="alert('typed!')"style="font-size:50px;"><br><br>
+    <h3>document.write()</h3>
+    <script>
+      document.write('wow')
+      document.write('뚜갈')
+      document.write("마옹")
+      document.write(1+1)
+    </script><br><br>
+   <h3> Function </h3>
+   <script>
+      var java = document.write("Java");
+      document.write("Java");
+      document.write("Java".length);
+    </script><br>
+    <p>
+      function sum(l,r) {<br>
+        return l+r;<br>
+      }<br>
+      document.write(sum(2,3)+'<br>');      document.write(sum(2,3)+'<br>');<br>
+
+      function sum2(l,r) {<br>
+        document.write(l+r+'<br>');
+      }<br>
+    </p>
+    <script>
+      function sum(l,r) {
+        return l+r;
+      }
+      document.write(sum(2,3)+'<br>');      document.write(sum(2,3)+'<br>');
+
+      function sum2(l,r) {
+        document.write(l+r+'<br>');
+      }
+      sum2(2,3);
+      sum2(23,3);
+    </script>
+
+   <h3> Object </h3>
+    <p>
+      var Apple = {<br>
+       "Phone" : "iPhone",<br>
+       "Laptop" : "Macbook",<br>
+       "Desktop" : "iMac",<br>
+      };
+    </p>
+   <script>
+    var Apple = {
+      "Phone" : "iPhone",
+      "Laptop" : "Macbook",
+      "Desktop" : "iMac",
+    };
+    document.write(Apple.Phone+'<br>');
+    document.write('Apple laptop : '+Apple.Laptop+'<br>');
+    Apple.Earphone="Airpods";
+    document.write(Apple.Earphone+'<br>');
+    Apple.Laptop;
+   </script>
+   <h3>Object & Iteration</h3>
+   <p>
+       var Apple2 = {<br>
+         "Phone" : "iPhone",<br>
+         "Laptop" : "Macbook",<br>
+         "Watch" : "AppleWatch",<br>
+       }<br><br>
+       <span>Iteraion of Object 1</span><br>
+
+       for(var key in Apple2) {<br>
+         document.write(<span>key+'<'br'>'</span>);<br>
+       }<br>
+   </p>
+   <script>
+    var Apple2 = {
+      "Phone" : "iPhone",
+      "Laptop" : "Macbook",
+      "Watch" : "AppleWatch",
+    }
+    for(var key in Apple2) {
+      document.write(key+'<br>');
+    }
+
+   </script>
+   <p>
+     <span>Iteraion of Object 2</span><br>
+       for(var key in Apple3) {<br>
+         document.write(<span>Apple3[key]+'<'br'>'</span>);<br>
+       }<br>
+    </p>
+    <script>
+      var Apple3 = {
+        "Phone" : "iPhone",
+        "Laptop" : "Macbook",
+        "Watch" : "AppleWatch",
+      }
+      for(var key in Apple3){
+        document.write(Apple3[key]+'<br>');
+      }
+    </script>
+    <p>
+      <span>Iteraion of Object 3</span><br>
+        for(var key in Apple4) {<br>
+          document.write(<span>(key+' : '+Apple4[key]+'<'br'>'</span>);<br>
+        }<br>
+    </p>
+    <script>
+     var Apple4 = {
+       "Phone" : "iPhone",
+       "Laptop" : "Macbook",
+       "Watch" : "AppleWatch",
+     }
+     for(var key in Apple4){
+       document.write(key+' : '+Apple4[key]+'<br>');
+     }
+    </script>
+    <h3>Property & Method</h3>
+    <p>
+      var Apple5 = {<br>
+        "Phone" : "iPhone",<br>
+        "Laptop" : "Macbook",<br>
+        "Watch" : "AppleWatch"<br>
+      }
+      Apple5.List = function(){<br>
+        for(var key in this){<br>
+          document.write(key+' : '+this[key]+'<'br'>');<br>
+        }<br>
+      }<br>
+      Apple5.List();<br>
+    </p>
+
+    <script>
+      var Apple5 = {
+        "Phone" : "iPhone",
+        "Laptop" : "Macbook",
+        "Watch" : "AppleWatch"
+      }
+      Apple5.List = function(){
+        for(var key in this){
+          document.write(key+' : '+this[key]+'<br>');
+        }
+      }
+      Apple5.List();
+    </script>
+ </body>
+</html>

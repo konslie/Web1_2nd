@@ -6,6 +6,13 @@ a {
   text-decoration:none;
   font-weight:bold;
 }
+input{
+  margin-left:20px;
+  margin-top:5px;
+  padding:5px;
+  font-size:13px;
+  font-weight:bold;
+}
 h1 {
   font-size:50px;
   text-align:center;
@@ -14,7 +21,6 @@ h1 {
   padding:10px;
 }
 ol {
-  border-right: 1px solid gray;
   width:100px;
   margin:0px;
   padding-top:10px;
@@ -24,10 +30,10 @@ ol {
   grid-template-columns: 150px 1fr;
 }
 #article {
-  padding-left:10px;
+  padding-left:20px;
 }
-#article a {
-  color:green;
+#navigation {
+  border-right:1px solid gray;
 }
 @media(max-width:600px){
   #grid {
